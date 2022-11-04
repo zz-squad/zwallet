@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta content="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,5 +12,68 @@
     <link rel="stylesheet" href="/output.css" />
     <title>Zwallet</title>
   </head>
-  <body></body>
+  <body class="bg-[#FAFCFF] text-dark">
+    <img
+      class="absolute top-0 right-0 -z-10 hidden h-auto w-1/2 md:block"
+      src="./images/hero-wave.png"
+      alt=""
+      loading="lazy"
+    />
+    <header
+      class="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between gap-4 px-6 py-8"
+    >
+      <h1>
+        <a
+          class="text-2xl font-bold text-primary md:text-3xl"
+          href="./"
+          title="Zwallet"
+          >Zwallet</a
+        >
+      </h1>
+      <div class="flex gap-4">
+        <button
+          class="button--outlined md:border-white md:text-white md:hover:bg-white md:hover:text-primary"
+          type="button"
+          title="Login"
+        >
+          Login
+        </button>
+        <button
+          class="button md:bg-white md:text-primary md:hover:shadow-slate-400"
+          type="button"
+          title="Sign Up"
+        >
+          Sign Up
+        </button>
+      </div>
+    </header>
+    <main>
+      <section
+        class="mx-auto flex max-w-screen-lg flex-col justify-between gap-8 p-6 md:flex-row"
+        id="hero"
+      >
+        <div class="flex flex-col items-start gap-4 md:basis-1/2">
+          <h2
+            class="text-5xl font-extrabold leading-[1.25] md:text-6xl md:leading-normal"
+          >
+            Awesome App for Saving
+            <span class="text-primary">Time</span>.
+          </h2>
+          <p class="leading-relaxed md:w-4/5">
+            We bring you a mobile app for banking problems that oftenly wasting
+            much of your times.
+          </p>
+          <button class="button mt-4" type="button" title="Try It">
+            Try It Free
+          </button>
+        </div>
+        <img
+          class="w-64 -translate-x-8 -translate-y-8 object-contain md:w-96 md:flex-initial md:translate-x-0"
+          src="./images/hero-phone.png"
+          alt=""
+          loading="lazy"
+        />
+      </section>
+    </main>
+  </body>
 </html>
