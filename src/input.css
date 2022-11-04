@@ -9,3 +9,13 @@
     --error-rgb: 255, 91, 55;
   }
 }
+
+@layer components {
+  .button {
+    @apply inline-flex items-center justify-center rounded-lg bg-primary px-6 py-2 font-bold text-white transition-shadow duration-300 hover:shadow-lg hover:shadow-slate-300;
+  }
+
+  .button--outlined {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-primary bg-transparent px-6 py-2 font-bold text-primary transition-colors duration-300 hover:bg-primary hover:text-white;
+  }
+}
