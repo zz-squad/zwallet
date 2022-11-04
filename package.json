@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "serve": "http-server ./dist"
+    "serve": "http-server ./dist -c-1"
   },
   "repository": {
     "type": "git",
