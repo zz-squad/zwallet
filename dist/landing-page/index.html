@@ -52,7 +52,7 @@
         class="mx-auto flex max-w-screen-lg flex-col justify-between gap-8 p-6 md:flex-row"
         id="hero"
       >
-        <div class="flex flex-col items-start gap-4 md:basis-1/2">
+        <div class="flex flex-grow flex-col items-start gap-4 md:basis-1/2">
           <h2
             class="text-5xl font-extrabold leading-[1.25] md:text-6xl md:leading-normal"
           >
@@ -73,6 +73,72 @@
           alt=""
           loading="lazy"
         />
+      </section>
+      <section class="bg-primary/5 py-16" id="about">
+        <div
+          class="mx-auto flex max-w-screen-lg flex-col items-center gap-8 px-6"
+        >
+          <h2 class="md:2/3 w-4/5 text-center text-4xl font-extrabold">
+            <span class="text-primary">About</span> The Application.
+          </h2>
+          <p class="w-4/5 text-center md:w-1/2">
+            We have some great features from the application and it's totally
+            free to use by all users around the world.
+          </p>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div
+              class="shadow-slate-20 flex flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow"
+            >
+              <div class="rounded-full bg-primary/10 p-4">
+                <img
+                  class="h-6"
+                  src="./images/about-support.svg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-lg font-bold">24/7 Support</h3>
+              <p class="text-center">
+                We have 24/7 contact support so you can contact us whenever you
+                want and we will respond it.
+              </p>
+            </div>
+            <div
+              class="shadow-slate-20 flex flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow"
+            >
+              <div class="rounded-full bg-primary/10 p-4">
+                <img
+                  class="h-6"
+                  src="./images/about-privacy.svg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-lg font-bold">Data Privacy</h3>
+              <p class="text-center">
+                We make sure your data is safe in our database and we will
+                encrypt any data you submitted to us.
+              </p>
+            </div>
+            <div
+              class="shadow-slate-20 flex flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow"
+            >
+              <div class="rounded-full bg-primary/10 p-4">
+                <img
+                  class="h-6"
+                  src="./images/about-easy.svg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-lg font-bold">Easy Download</h3>
+              <p class="text-center">
+                Zwallet is 100% totally free to use. It's now available on
+                Google Play Store and App Store.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
