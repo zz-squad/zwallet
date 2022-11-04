@@ -1,0 +1,29 @@
+{
+  "name": "zwallet",
+  "version": "1.0.0",
+  "description": "Zwallet template, build with Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "serve": "http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zz-squad/zwallet.git"
+  },
+  "author": "ZZ Squad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zz-squad/zwallet/issues"
+  },
+  "homepage": "https://github.com/zz-squad/zwallet#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

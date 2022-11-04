@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-rgb: 99, 121, 244;
+    --dark-rgb: 58, 61, 66;
+    --error-rgb: 255, 91, 55;
+  }
+}
