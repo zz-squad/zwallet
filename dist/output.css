@@ -677,8 +677,24 @@ video {
   width: 4rem;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
+}
+
+.max-w-\[10rem\] {
+  max-width: 10rem;
+}
+
+.max-w-\[20rem\] {
+  max-width: 20rem;
+}
+
+.max-w-\[17\.5rem\] {
+  max-width: 17.5rem;
 }
 
 .flex-grow {
@@ -723,6 +739,10 @@ video {
   align-items: stretch;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -747,6 +767,18 @@ video {
   gap: 3rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -757,6 +789,23 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-white\/60 {
+  border-color: rgb(255 255 255 / 0.6);
 }
 
 .bg-\[\#FAFCFF\] {
@@ -775,6 +824,11 @@ video {
 
 .bg-primary\/10 {
   background-color: rgb(99 121 244 / 0.1);
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 121 244 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -812,6 +866,10 @@ video {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -872,6 +930,24 @@ video {
   color: rgb(58 61 66 / 0.9);
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#EFEFEF\]\/75 {
+  color: rgb(239 239 239 / 0.75);
+}
+
+.text-\[\#EFEFEF\]\/90 {
+  color: rgb(239 239 239 / 0.9);
+}
+
+.text-\[\#EFEFEF\] {
+  --tw-text-opacity: 1;
+  color: rgb(239 239 239 / var(--tw-text-opacity));
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -892,6 +968,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .hover\:shadow-2xl:hover {
