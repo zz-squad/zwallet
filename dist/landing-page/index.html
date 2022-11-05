@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ZZ Squad" />
+    <meta name="theme-color" content="#6379f4" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,154 +15,240 @@
     <link rel="stylesheet" href="/output.css" />
     <title>Zwallet</title>
   </head>
-  <body class="bg-[#FAFCFF] text-dark">
-    <img
-      class="absolute top-0 right-0 -z-10 hidden h-auto w-1/2 md:block"
-      src="./images/hero-wave.png"
-      alt=""
-      loading="lazy"
-    />
-    <header
-      class="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between gap-4 px-6 py-8"
+  <body class="bg-[#fafcff] text-dark">
+    <!-- Hero Wave -->
+
+    <div
+      class="absolute top-0 left-1/2 -z-10 hidden w-full max-w-screen-xl -translate-x-1/2 md:block"
     >
-      <h1>
-        <a
-          class="text-2xl font-bold text-primary md:text-3xl"
-          href="./"
-          title="Zwallet"
-          >Zwallet</a
-        >
-      </h1>
-      <div class="flex gap-4">
-        <button
-          class="button--outlined md:border-white md:text-white md:hover:bg-white md:hover:text-primary"
-          type="button"
-          title="Login"
-        >
-          Login
-        </button>
-        <button
-          class="button md:bg-white md:text-primary md:hover:shadow-slate-400"
-          type="button"
-          title="Sign Up"
-        >
-          Sign Up
-        </button>
+      <img
+        class="absolute top-0 right-0 w-1/2"
+        src="./images/hero/wave.svg"
+        alt=""
+        loading="lazy"
+      />
+    </div>
+
+    <!-- Header -->
+
+    <header>
+      <div
+        class="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between gap-4 py-8 px-6"
+      >
+        <h1>
+          <a
+            class="relative text-2xl font-bold text-primary"
+            href="./"
+            title="Zwallet"
+            >Zwallet</a
+          >
+        </h1>
+        <ul class="flex flex-wrap gap-4">
+          <li>
+            <a
+              class="button-outlined md:text-white md:[--outline-color:var(--white-color)] md:hover:bg-white md:hover:text-primary"
+              href="#"
+              title="Login"
+            >
+              Login
+            </a>
+          </li>
+          <li>
+            <a
+              class="button md:bg-white md:text-primary md:hover:shadow-white/20"
+              href="#"
+              title="Sign Up"
+            >
+              Sign Up
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
+
     <main>
-      <section
-        class="mx-auto flex max-w-screen-lg flex-col justify-between gap-8 p-6 md:flex-row"
-        id="hero"
-      >
-        <div class="flex flex-grow flex-col items-start gap-4 md:basis-1/2">
-          <h2
-            class="text-5xl font-extrabold leading-[1.25] md:text-6xl md:leading-normal"
-          >
-            Awesome App for Saving
-            <span class="text-primary">Time</span>.
-          </h2>
-          <p class="leading-relaxed md:w-4/5">
-            We bring you a mobile app for banking problems that oftenly wasting
-            much of your times.
-          </p>
-          <button class="button mt-4" type="button" title="Try It">
-            Try It Free
-          </button>
-        </div>
-        <img
-          class="w-64 -translate-x-8 -translate-y-8 object-contain md:w-96 md:flex-initial md:translate-x-0"
-          src="./images/hero-phone.png"
-          alt=""
-          loading="lazy"
-        />
-      </section>
-      <section class="bg-primary/5 py-16" id="about">
+      <!-- Hero Section -->
+
+      <section id="hero">
         <div
-          class="mx-auto flex max-w-screen-lg flex-col items-center gap-8 px-6"
+          class="mx-auto flex max-w-screen-lg flex-col items-center gap-8 p-6 pb-12 md:flex-row md:items-start md:justify-between md:pt-24 md:pb-16"
         >
-          <h2 class="md:2/3 w-4/5 text-center text-4xl font-extrabold">
-            <span class="text-primary">About</span> The Application.
-          </h2>
-          <p class="w-4/5 text-center md:w-1/2">
-            We have some great features from the application and it's totally
-            free to use by all users around the world.
-          </p>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <div
-              class="shadow-slate-20 flex flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow"
+          <section
+            class="flex max-w-[24rem] flex-col items-center gap-4 text-center md:items-start"
+          >
+            <h2
+              class="text-5xl font-extrabold leading-snug md:text-left md:leading-normal"
+            >
+              Awesome App for Saving
+              <span class="text-primary">Time</span>.
+            </h2>
+            <p class="leading-relaxed md:text-left">
+              We bring you a mobile app for banking problems that oftenly
+              wasting much of your times.
+            </p>
+            <a class="button mt-4" href="#" title="Try It"> Try It Free</a>
+          </section>
+          <img
+            class="w-64 md:-mt-32 md:w-96"
+            src="./images/hero/phone.png"
+            alt="Zwallet Phone Display"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <section class="bg-primary/5" id="about">
+        <div
+          class="mx-auto flex max-w-screen-lg flex-col items-center gap-16 py-20 px-6"
+        >
+          <header
+            class="flex max-w-[30rem] flex-col items-center gap-6 text-center md:max-w-[35rem]"
+          >
+            <h2
+              class="text-4xl font-extrabold leading-snug md:text-5xl md:leading-normal"
+            >
+              <span class="text-primary">About</span> the Application.
+            </h2>
+            <p class="leading-relaxed md:max-w-[32rem]">
+              We have some great features from the application and it's totally
+              free to use by all users around the world.
+            </p>
+          </header>
+          <ul
+            class="grid justify-between justify-items-center gap-y-6 gap-x-4 md:grid-cols-3"
+          >
+            <li
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
             >
               <div class="rounded-full bg-primary/10 p-4">
                 <img
                   class="h-6"
-                  src="./images/about-support.svg"
+                  src="./images/about/24-7-support.svg"
                   alt=""
                   loading="lazy"
                 />
               </div>
-              <h3 class="text-lg font-bold">24/7 Support</h3>
-              <p class="text-center">
-                We have 24/7 contact support so you can contact us whenever you
-                want and we will respond it.
+              <h3 class="text-lg font-bold leading-normal">24/7 Support</h3>
+              <p class="leading-normal text-dark/90">
+                We have 24/7 contact support. So, you can contact us whenever
+                you want and we will respond it.
               </p>
-            </div>
-            <div
-              class="shadow-slate-20 flex flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow"
+            </li>
+            <li
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
             >
               <div class="rounded-full bg-primary/10 p-4">
                 <img
                   class="h-6"
-                  src="./images/about-privacy.svg"
+                  src="./images/about/data-privacy.svg"
                   alt=""
                   loading="lazy"
                 />
               </div>
-              <h3 class="text-lg font-bold">Data Privacy</h3>
-              <p class="text-center">
+              <h3 class="text-lg font-bold leading-normal">Data Privacy</h3>
+              <p class="leading-normal text-dark/90">
                 We make sure your data is safe in our database and we will
                 encrypt any data you submitted to us.
               </p>
-            </div>
-            <div
-              class="shadow-slate-20 flex flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow"
+            </li>
+            <li
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
             >
               <div class="rounded-full bg-primary/10 p-4">
                 <img
                   class="h-6"
-                  src="./images/about-easy.svg"
+                  src="./images/about/easy-download.svg"
                   alt=""
                   loading="lazy"
                 />
               </div>
-              <h3 class="text-lg font-bold">Easy Download</h3>
-              <p class="text-center">
+              <h3 class="text-lg font-bold leading-normal">Easy Download</h3>
+              <p class="leading-normal text-dark/90">
                 Zwallet is 100% totally free to use. It's now available on
                 Google Play Store and App Store.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section
-        class="mx-auto flex max-w-screen-lg flex-col justify-between gap-8 py-12 px-6 md:flex-row"
-        id="partners"
-      >
-        <div class="flex flex-col gap-4">
-          <h2 class="text-5xl font-extrabold leading-normal">
-            100+ <span class="text-primary">Trusted</span> Partners.
-          </h2>
-          <p>
-            We have reached global level and have 100+ brand partners around the
-            globe.
-          </p>
-        </div>
-        <div class="grid grid-cols-3 gap-4">
-          <img src="./images/airbnb.svg" alt="Airbnb Logo" />
-          <img src="./images/canon.svg" alt="Canon Logo" />
-          <img src="./images/dell.svg" alt="Dell Logo" />
-          <img src="./images/microsoft.svg" alt="Microsoft Logo" />
-          <img src="./images/dropbox.svg" alt="Dropbox Logo" />
-          <img src="./images/h&m.svg" alt="H&M Logo" />
+
+      <!-- Partners Section -->
+
+      <section id="partners">
+        <div
+          class="mx-auto flex max-w-screen-lg flex-col items-center justify-between gap-16 px-6 py-20 md:flex-row lg:gap-28"
+        >
+          <header
+            class="flex max-w-[30rem] flex-shrink-0 flex-col items-center gap-6 text-center md:max-w-[22.5rem] md:items-start md:text-start"
+          >
+            <h2
+              class="text-4xl font-extrabold leading-snug md:text-5xl md:leading-normal"
+            >
+              100+ <span class="text-primary">Trusted</span> Partners.
+            </h2>
+            <p class="leading-relaxed">
+              We have reached global level and have 100+ brand partners around
+              the globe.
+            </p>
+          </header>
+          <ul class="flex flex-wrap items-center justify-center gap-4">
+            <li class="w-[min(8.5rem,100%)]">
+              <img
+                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
+                src="./images/partners/airbnb.svg"
+                alt="Airbnb Logo"
+                loading="lazy"
+                title="Airbnb"
+              />
+            </li>
+            <li class="w-[min(8.5rem,100%)]">
+              <img
+                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
+                src="./images/partners/canon.svg"
+                alt="Canon Logo"
+                loading="lazy"
+                title="Canon"
+              />
+            </li>
+            <li class="w-[min(8.5rem,100%)]">
+              <img
+                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
+                src="./images/partners/dell.svg"
+                alt="Dell Logo"
+                loading="lazy"
+                title="Dell"
+              />
+            </li>
+            <li class="w-[min(8.5rem,100%)]">
+              <img
+                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
+                src="./images/partners/microsoft.svg"
+                alt="Microsoft Logo"
+                loading="lazy"
+                title="Microsoft"
+              />
+            </li>
+            <li class="w-[min(8.5rem,100%)]">
+              <img
+                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
+                src="./images/partners/dropbox.svg"
+                alt="Dropbox Logo"
+                loading="lazy"
+                title="Dropbox"
+              />
+            </li>
+            <li class="w-[min(8.5rem,100%)]">
+              <img
+                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
+                src="./images/partners/h&m.svg"
+                alt="H&M Logo"
+                loading="lazy"
+                title="H&M"
+              />
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -167,115 +256,127 @@
 
       <section class="bg-primary/5" id="features">
         <div
-          class="mx-auto grid max-w-screen-lg justify-items-center px-6 py-16 md:justify-items-stretch md:gap-8"
+          class="mx-auto flex max-w-screen-lg flex-col items-center px-6 py-20 md:flex-row md:gap-12"
         >
-          <h2
-            class="text-center text-4xl font-extrabold leading-normal md:col-start-2 md:col-end-3 md:row-span-1 md:text-left md:text-5xl md:leading-relaxed"
-          >
-            All The <span class="text-primary">Great</span> Zwallet Features.
-          </h2>
+          <section class="contents md:order-last md:flex md:flex-col md:gap-8">
+            <h2
+              class="max-w-[30rem] text-center text-4xl font-extrabold leading-snug md:col-start-2 md:col-end-3 md:row-span-1 md:text-start md:text-5xl md:leading-normal"
+            >
+              All the <span class="text-primary">Great</span> Zwallet Features.
+            </h2>
+            <ol
+              class="order-last mt-4 flex flex-col items-center gap-6 md:col-start-2 md:col-end-3 md:mt-0 md:items-stretch"
+            >
+              <li
+                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+              >
+                <h3 class="flex gap-3 font-bold">
+                  <span class="text-primary">1.</span>
+                  <span>Small Fee</span>
+                </h3>
+                <p class="leading-normal text-dark/90">
+                  We only charge 5% of every success transaction done in Zwallet
+                  app.
+                </p>
+              </li>
+              <li
+                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+              >
+                <h3 class="flex gap-3 font-bold">
+                  <span class="text-primary">2.</span>
+                  <span>Data Secured</span>
+                </h3>
+                <p class="leading-normal text-dark/90">
+                  All your data is secured properly in our system and it's
+                  encrypted.
+                </p>
+              </li>
+              <li
+                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+              >
+                <h3 class="flex gap-3 font-bold">
+                  <span class="text-primary">3.</span>
+                  <span>User Friendly</span>
+                </h3>
+                <p class="leading-normal text-dark/90">
+                  Zwallet come up with modern and sleek design and not
+                  complicated.
+                </p>
+              </li>
+            </ol>
+          </section>
           <img
-            class="w-[15rem] md:order-first md:col-span-1 md:row-start-1 md:row-end-5 md:w-[25rem] md:-translate-y-12 md:justify-self-center"
+            class="w-64 md:w-96"
             src="./images/features/transaction-display.png"
             alt="Transaction Display"
+            loading="lazy"
           />
-          <ol
-            class="mt-4 flex flex-col items-stretch gap-6 md:col-start-2 md:col-end-3 md:mt-0"
-          >
-            <li
-              class="flex flex-col gap-4 rounded-3xl bg-white p-6 transition-shadow duration-300 hover:shadow-2xl hover:shadow-dark/5"
-            >
-              <h3 class="flex gap-4 font-bold">
-                <span class="text-primary">1.</span>
-                <span>Small Fee</span>
-              </h3>
-              <p class="leading-normal text-dark/90">
-                We only charge 5% of every success transaction done in Zwallet
-                app.
-              </p>
-            </li>
-            <li
-              class="flex flex-col gap-4 rounded-3xl bg-white p-6 transition-shadow duration-300 hover:shadow-2xl hover:shadow-dark/5"
-            >
-              <h3 class="flex gap-4 font-bold">
-                <span class="text-primary">2.</span>
-                <span>Data Secured</span>
-              </h3>
-              <p class="leading-normal text-dark/90">
-                All your data is secured properly in our system and it's
-                encrypted.
-              </p>
-            </li>
-            <li
-              class="flex flex-col gap-4 rounded-3xl bg-white p-6 transition-shadow duration-300 hover:shadow-2xl hover:shadow-dark/5"
-            >
-              <h3 class="flex gap-4 font-bold">
-                <span class="text-primary">3.</span>
-                <span>User Friendly</span>
-              </h3>
-              <p class="leading-normal text-dark/90">
-                Zwallet come up with modern and sleek design and not
-                complicated.
-              </p>
-            </li>
-          </ol>
         </div>
       </section>
 
-      <!-- Testimonials -->
+      <!-- Testimonials Section -->
 
       <section id="testimonials">
         <div
-          class="mx-auto flex max-w-screen-lg flex-col items-center gap-8 px-6 py-12"
+          class="mx-auto flex max-w-screen-lg flex-col items-center gap-16 py-20 px-6"
         >
-          <h2
-            class="text-center text-4xl font-extrabold leading-normal md:w-3/5 md:text-5xl md:leading-relaxed"
+          <header
+            class="flex max-w-[30rem] flex-col items-center gap-6 text-center md:max-w-[35rem]"
           >
-            What Users Are <span class="text-primary">Saying</span>.
-          </h2>
-          <p class="text-center leading-normal md:w-3/5">
-            We have some great features from the application and it's totally
-            free to use by all users around the world.
-          </p>
-          <section class="mt-4 grid gap-4 md:grid-cols-3">
+            <h2
+              class="text-4xl font-extrabold leading-snug md:text-5xl md:leading-normal"
+            >
+              What Users Are <span class="text-primary">Saying</span>.
+            </h2>
+            <p class="leading-relaxed md:max-w-[32rem]">
+              We have some great features from the application and it's totally
+              free to use by all users around the world.
+            </p>
+          </header>
+          <section
+            class="grid justify-between justify-items-center gap-y-6 gap-x-4 md:grid-cols-3"
+          >
             <article
-              class="flex flex-col items-center gap-8 rounded-3xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
             >
               <img
-                class="w-16"
-                src="./images/testimonials/sherina-chaw.png"
+                class="w-16 rounded-2xl"
+                src="./images/testimonials/sherina-chaw.jpg"
                 alt="Sherina Chaw"
+                loading="lazy"
               />
               <h3 class="text-lg font-bold leading-normal">Sherina Chaw</h3>
-              <p class="text-center leading-normal text-dark/90">
+              <p class="leading-normal text-dark/90">
                 "I use this app since 2 years ago and this is the best app that
                 I've ever use in my entire life."
               </p>
             </article>
             <article
-              class="flex flex-col items-center gap-8 rounded-3xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
             >
               <img
-                class="w-16"
-                src="./images/testimonials/jessica-mera.png"
+                class="w-16 rounded-2xl"
+                src="./images/testimonials/jessica-mera.jpg"
                 alt="Jessica Mera"
+                loading="lazy"
               />
               <h3 class="text-lg font-bold leading-normal">Jessica Mera</h3>
-              <p class="text-center leading-normal text-dark/90">
+              <p class="leading-normal text-dark/90">
                 "I use Zwallet to manage all financial needs. It's super easy to
                 use and it's 100% free app."
               </p>
             </article>
             <article
-              class="flex flex-col items-center gap-8 rounded-3xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
             >
               <img
-                class="w-16"
-                src="./images/testimonials/robert-chandler.png"
+                class="w-16 rounded-2xl"
+                src="./images/testimonials/robert-chandler.jpg"
                 alt="Robert Chandler"
+                loading="lazy"
               />
               <h3 class="text-lg font-bold leading-normal">Robert Chandler</h3>
-              <p class="text-center leading-normal text-dark/90">
+              <p class="leading-normal text-dark/90">
                 "Since I'm using this app, I'm not going to move to another
                 similar app. Thank you Zwallet!"
               </p>
@@ -289,32 +390,32 @@
 
     <footer class="bg-primary text-white">
       <div class="mx-auto max-w-screen-lg px-6">
-        <section class="flex flex-col gap-6 py-12">
+        <section class="flex flex-col gap-6 pb-12 pt-16">
           <h2>
-            <a class="text-2xl font-bold md:text-3xl" href="#" title="Zwallet"
+            <a class="text-2xl font-bold md:text-3xl" href="./" title="Zwallet"
               >Zwallet</a
             >
           </h2>
-          <p class="max-w-[17.5rem] leading-normal text-[#EFEFEF]/75">
+          <p class="max-w-[17.5rem] leading-normal text-[#efefef]/75">
             Simplify financial needs and saving much time in banking needs with
             one single app.
           </p>
         </section>
         <section
-          class="flex flex-col justify-between gap-3 border-t border-white/60 py-8 md:flex-row"
+          class="flex flex-col justify-between gap-3 border-t border-white/60 pt-8 pb-12 md:flex-row"
         >
-          <p class="leading-normal text-[#EFEFEF]/90">
-            2020 Zwallet. All right reserved.
+          <p class="leading-normal text-[#efefef]/90">
+            2020 Zwallet. All rights reserved.
           </p>
-          <section class="flex gap-4 md:gap-8">
+          <section class="flex flex-wrap gap-4 md:gap-8">
             <a
-              class="text-[#EFEFEF] hover:underline"
+              class="text-[#efefef] hover:underline"
               href="tel:+62563788829901"
               title="Telephone Number"
               >+62 5637 8882 9901</a
             >
             <a
-              class="text-[#EFEFEF] hover:underline"
+              class="text-[#efefef] hover:underline"
               href="mailto:contact@zwallet.com"
               title="Email Address"
               >contact@zwallet.com</a
