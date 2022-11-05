@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#6379F4',
-        dark: '#3A3D42',
-        error: '#FF5B37',
+        primary: '#6379f4',
+        dark: '#3a3d42',
+        error: '#ff5b37',
       },
       fontFamily: {
         sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
