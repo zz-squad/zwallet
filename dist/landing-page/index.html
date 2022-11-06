@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="/output.css" />
     <title>Zwallet</title>
   </head>
@@ -19,31 +20,24 @@
     <!-- Hero Wave -->
 
     <div
-      class="absolute top-0 left-1/2 -z-10 hidden w-full max-w-screen-xl -translate-x-1/2 md:block"
+      class="absolute top-0 left-1/2 -z-10 hidden w-full max-w-screen-xl -translate-x-1/2 md:flex md:justify-end"
     >
-      <img
-        class="absolute top-0 right-0 w-1/2"
-        src="./images/hero/wave.svg"
-        alt=""
-        loading="lazy"
-      />
+      <img class="w-1/2" src="./images/hero/wave.svg" alt="" loading="lazy" />
     </div>
 
     <!-- Header -->
 
     <header>
       <div
-        class="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between gap-4 py-8 px-6"
+        class="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between gap-2 py-8 px-6 md:gap-4"
+        data-aos="fade-down"
       >
         <h1>
-          <a
-            class="relative text-2xl font-bold text-primary"
-            href="./"
-            title="Zwallet"
+          <a class="text-2xl font-bold text-primary" href="./" title="Zwallet"
             >Zwallet</a
           >
         </h1>
-        <ul class="flex flex-wrap gap-4">
+        <ul class="flex flex-wrap gap-2 md:gap-4">
           <li>
             <a
               class="button-outlined md:text-white md:[--outline-color:var(--white-color)] md:hover:bg-white md:hover:text-primary"
@@ -71,28 +65,28 @@
 
       <section id="hero">
         <div
-          class="mx-auto flex max-w-screen-lg flex-col items-center gap-8 p-6 pb-12 md:flex-row md:items-start md:justify-between md:pt-24 md:pb-16"
+          class="mx-auto flex max-w-screen-lg flex-col items-center justify-between p-6 pb-12 md:flex-row md:items-start md:gap-8 md:pt-24 md:pb-16"
         >
           <section
-            class="flex max-w-[24rem] flex-col items-center gap-4 text-center md:items-start"
+            class="flex max-w-[24rem] flex-col items-center gap-4 text-center md:items-start md:text-left"
+            data-aos="fade-right"
           >
-            <h2
-              class="text-5xl font-extrabold leading-snug md:text-left md:leading-normal"
-            >
+            <h2 class="text-5xl font-extrabold leading-snug md:leading-normal">
               Awesome App for Saving
               <span class="text-primary">Time</span>.
             </h2>
-            <p class="leading-relaxed md:text-left">
+            <p class="leading-relaxed">
               We bring you a mobile app for banking problems that oftenly
               wasting much of your times.
             </p>
-            <a class="button mt-4" href="#" title="Try It"> Try It Free</a>
+            <a class="button mt-4" href="#" title="Try It">Try It Free</a>
           </section>
           <img
             class="w-64 md:-mt-32 md:w-96"
             src="./images/hero/phone.png"
             alt="Zwallet Phone Display"
             loading="lazy"
+            data-aos="fade-left"
           />
         </div>
       </section>
@@ -108,10 +102,11 @@
           >
             <h2
               class="text-4xl font-extrabold leading-snug md:text-5xl md:leading-normal"
+              data-aos="fade-up"
             >
               <span class="text-primary">About</span> the Application.
             </h2>
-            <p class="leading-relaxed md:max-w-[32rem]">
+            <p class="leading-relaxed md:max-w-[32rem]" data-aos="fade-up">
               We have some great features from the application and it's totally
               free to use by all users around the world.
             </p>
@@ -120,7 +115,9 @@
             class="grid justify-between justify-items-center gap-y-6 gap-x-4 md:grid-cols-3"
           >
             <li
-              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_0ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="0"
             >
               <div class="rounded-full bg-primary/10 p-4">
                 <img
@@ -137,7 +134,9 @@
               </p>
             </li>
             <li
-              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_200ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <div class="rounded-full bg-primary/10 p-4">
                 <img
@@ -154,7 +153,9 @@
               </p>
             </li>
             <li
-              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_400ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="400"
             >
               <div class="rounded-full bg-primary/10 p-4">
                 <img
@@ -185,67 +186,68 @@
           >
             <h2
               class="text-4xl font-extrabold leading-snug md:text-5xl md:leading-normal"
+              data-aos="fade-up"
             >
               100+ <span class="text-primary">Trusted</span> Partners.
             </h2>
-            <p class="leading-relaxed">
+            <p class="leading-relaxed" data-aos="fade-up">
               We have reached global level and have 100+ brand partners around
               the globe.
             </p>
           </header>
           <ul class="flex flex-wrap items-center justify-center gap-4">
-            <li class="w-[min(8.5rem,100%)]">
+            <li class="w-full max-w-[8.5rem]">
               <img
-                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
                 src="./images/partners/airbnb.svg"
                 alt="Airbnb Logo"
                 loading="lazy"
-                title="Airbnb"
+                data-aos="zoom-out"
+                data-aos-delay="0"
               />
             </li>
-            <li class="w-[min(8.5rem,100%)]">
+            <li class="w-full max-w-[8.5rem]">
               <img
-                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
                 src="./images/partners/canon.svg"
                 alt="Canon Logo"
                 loading="lazy"
-                title="Canon"
+                data-aos="zoom-out"
+                data-aos-delay="100"
               />
             </li>
-            <li class="w-[min(8.5rem,100%)]">
+            <li class="w-full max-w-[8.5rem]">
               <img
-                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
                 src="./images/partners/dell.svg"
                 alt="Dell Logo"
                 loading="lazy"
-                title="Dell"
+                data-aos="zoom-out"
+                data-aos-delay="200"
               />
             </li>
-            <li class="w-[min(8.5rem,100%)]">
+            <li class="w-full max-w-[8.5rem]">
               <img
-                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
                 src="./images/partners/microsoft.svg"
                 alt="Microsoft Logo"
                 loading="lazy"
-                title="Microsoft"
+                data-aos="zoom-out"
+                data-aos-delay="300"
               />
             </li>
-            <li class="w-[min(8.5rem,100%)]">
+            <li class="w-full max-w-[8.5rem]">
               <img
-                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
                 src="./images/partners/dropbox.svg"
                 alt="Dropbox Logo"
                 loading="lazy"
-                title="Dropbox"
+                data-aos="zoom-out"
+                data-aos-delay="400"
               />
             </li>
-            <li class="w-[min(8.5rem,100%)]">
+            <li class="w-full max-w-[8.5rem]">
               <img
-                class="opacity-75 transition-opacity duration-300 hover:opacity-100"
                 src="./images/partners/h&m.svg"
                 alt="H&M Logo"
                 loading="lazy"
-                title="H&M"
+                data-aos="zoom-out"
+                data-aos-delay="500"
               />
             </li>
           </ul>
@@ -260,17 +262,20 @@
         >
           <section class="contents md:order-last md:flex md:flex-col md:gap-8">
             <h2
-              class="max-w-[30rem] text-center text-4xl font-extrabold leading-snug md:col-start-2 md:col-end-3 md:row-span-1 md:text-start md:text-5xl md:leading-normal"
+              class="max-w-[30rem] text-center text-4xl font-extrabold leading-snug md:text-start md:text-5xl md:leading-normal"
+              data-aos="fade-up"
             >
               All the <span class="text-primary">Great</span> Zwallet Features.
             </h2>
             <ol
-              class="order-last mt-4 flex flex-col items-center gap-6 md:col-start-2 md:col-end-3 md:mt-0 md:items-stretch"
+              class="order-last mt-4 flex flex-col items-center gap-6 md:mt-0 md:items-stretch"
             >
               <li
-                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_0ms,box-shadow_300ms] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+                data-aos="fade-up"
+                data-aos-delay="0"
               >
-                <h3 class="flex gap-3 font-bold">
+                <h3 class="flex gap-3 font-bold leading-normal">
                   <span class="text-primary">1.</span>
                   <span>Small Fee</span>
                 </h3>
@@ -280,9 +285,11 @@
                 </p>
               </li>
               <li
-                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_200ms,box-shadow_300ms] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+                data-aos="fade-up"
+                data-aos-delay="200"
               >
-                <h3 class="flex gap-3 font-bold">
+                <h3 class="flex gap-3 font-bold leading-normal">
                   <span class="text-primary">2.</span>
                   <span>Data Secured</span>
                 </h3>
@@ -292,15 +299,16 @@
                 </p>
               </li>
               <li
-                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+                class="flex max-w-[25rem] flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_400ms,box-shadow_300ms] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] md:max-w-none"
+                data-aos="fade-up"
+                data-aos-delay="400"
               >
-                <h3 class="flex gap-3 font-bold">
+                <h3 class="flex gap-3 font-bold leading-normal">
                   <span class="text-primary">3.</span>
                   <span>User Friendly</span>
                 </h3>
                 <p class="leading-normal text-dark/90">
-                  Zwallet come up with modern and sleek design and not
-                  complicated.
+                  Zwallet come up with modern and sleek design, not complicated.
                 </p>
               </li>
             </ol>
@@ -310,6 +318,8 @@
             src="./images/features/transaction-display.png"
             alt="Transaction Display"
             loading="lazy"
+            data-aos="fade-up"
+            data-aos-delay="200"
           />
         </div>
       </section>
@@ -318,29 +328,33 @@
 
       <section id="testimonials">
         <div
-          class="mx-auto flex max-w-screen-lg flex-col items-center gap-16 py-20 px-6"
+          class="mx-auto flex max-w-screen-lg flex-col items-center gap-12 py-20 pb-16"
         >
-          <header
-            class="flex max-w-[30rem] flex-col items-center gap-6 text-center md:max-w-[35rem]"
-          >
+          <header class="flex flex-col items-center gap-6 px-6 text-center">
             <h2
-              class="text-4xl font-extrabold leading-snug md:text-5xl md:leading-normal"
+              class="max-w-[30rem] text-4xl font-extrabold leading-snug md:max-w-[35rem] md:text-5xl md:leading-normal"
+              data-aos="fade-up"
             >
               What Users Are <span class="text-primary">Saying</span>.
             </h2>
-            <p class="leading-relaxed md:max-w-[32rem]">
+            <p
+              class="max-w-[30rem] leading-relaxed md:max-w-[32rem]"
+              data-aos="fade-up"
+            >
               We have some great features from the application and it's totally
               free to use by all users around the world.
             </p>
           </header>
           <section
-            class="grid justify-between justify-items-center gap-y-6 gap-x-4 md:grid-cols-3"
+            class="scrollbar flex w-full snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden py-8 px-6"
           >
             <article
-              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              class="flex w-full min-w-[15rem] max-w-[20rem] flex-shrink-0 flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_0ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="0"
             >
               <img
-                class="w-16 rounded-2xl"
+                class="h-16 w-16 rounded-2xl object-cover"
                 src="./images/testimonials/sherina-chaw.jpg"
                 alt="Sherina Chaw"
                 loading="lazy"
@@ -352,10 +366,29 @@
               </p>
             </article>
             <article
-              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              class="flex w-full min-w-[15rem] max-w-[20rem] flex-shrink-0 flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_100ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               <img
-                class="w-16 rounded-2xl"
+                class="h-16 w-16 rounded-2xl object-cover"
+                src="./images/testimonials/robert-chandler.jpg"
+                alt="Robert Chandler"
+                loading="lazy"
+              />
+              <h3 class="text-lg font-bold leading-normal">Robert Chandler</h3>
+              <p class="leading-normal text-dark/90">
+                "Since I'm using this app, I'm not going to move to another
+                similar app. Thank you Zwallet!"
+              </p>
+            </article>
+            <article
+              class="flex w-full min-w-[15rem] max-w-[20rem] flex-shrink-0 flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_200ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img
+                class="h-16 w-16 rounded-2xl object-cover"
                 src="./images/testimonials/jessica-mera.jpg"
                 alt="Jessica Mera"
                 loading="lazy"
@@ -367,18 +400,54 @@
               </p>
             </article>
             <article
-              class="flex max-w-[25rem] flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-500 hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              class="flex w-full min-w-[15rem] max-w-[20rem] flex-shrink-0 flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_300ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <img
-                class="w-16 rounded-2xl"
-                src="./images/testimonials/robert-chandler.jpg"
-                alt="Robert Chandler"
+                class="h-16 w-16 rounded-2xl object-cover"
+                src="./images/testimonials/riley-fraser.jpg"
+                alt="Riley Fraser"
                 loading="lazy"
               />
-              <h3 class="text-lg font-bold leading-normal">Robert Chandler</h3>
+              <h3 class="text-lg font-bold leading-normal">Riley Fraser</h3>
               <p class="leading-normal text-dark/90">
-                "Since I'm using this app, I'm not going to move to another
-                similar app. Thank you Zwallet!"
+                "I don't know what else to say. I'd be lost without Zwallet.
+                Keep up the excellent work."
+              </p>
+            </article>
+            <article
+              class="flex w-full min-w-[15rem] max-w-[20rem] flex-shrink-0 flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_400ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <img
+                class="h-16 w-16 rounded-2xl object-cover"
+                src="./images/testimonials/anna-veronica.jpg"
+                alt="Anna Veronica"
+                loading="lazy"
+              />
+              <h3 class="text-lg font-bold leading-normal">Anna Veronica</h3>
+              <p class="leading-normal text-dark/90">
+                "Thanks Zwallet! Thanks guys, keep up the good work! I wish I
+                would have thought of it first."
+              </p>
+            </article>
+            <article
+              class="flex w-full min-w-[15rem] max-w-[20rem] flex-shrink-0 flex-col items-center gap-6 rounded-2xl bg-white px-4 pt-8 pb-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] ![transition:all_1000ms_500ms,box-shadow_500ms] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)]"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <img
+                class="h-16 w-16 rounded-2xl object-cover"
+                src="./images/testimonials/joseph-troy.jpg"
+                alt="Joseph Troy"
+                loading="lazy"
+              />
+              <h3 class="text-lg font-bold leading-normal">Joseph Troy</h3>
+              <p class="leading-normal text-dark/90">
+                "This is simply unbelievable! Zwallet impressed me on multiple
+                levels."
               </p>
             </article>
           </section>
@@ -407,7 +476,7 @@
           <p class="leading-normal text-[#efefef]/90">
             2020 Zwallet. All rights reserved.
           </p>
-          <section class="flex flex-wrap gap-4 md:gap-8">
+          <section class="flex flex-wrap gap-y-1 gap-x-4 md:gap-8">
             <a
               class="text-[#efefef] hover:underline"
               href="tel:+62563788829901"
@@ -424,5 +493,15 @@
         </section>
       </div>
     </footer>
+
+    <!-- Animate on Scroll (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        anchorPlacement: 'top-top',
+      });
+    </script>
   </body>
 </html>
